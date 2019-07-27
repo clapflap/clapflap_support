@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/* Detail */
+
+.content, #detail {
+    width: 90%;
+}
+.content li, .content p, .data {
+    font-size: 0.75rem;
+}
+.data {
+    margin: auto;
+    text-align: center;
+}
+#detail {
+    margin: 0 auto;
+}
+/** Main **/
+.main hr {
+    margin: 0;
+}
+.main p {
+    margin: 1rem;
+}
+.main svg {
+    margin: 1rem 0.25rem;
+    width: 75%;
+}
+#picture {
+    margin: 2.5rem auto;
+}
+/** Content **/
+.content {
+    line-height: 1.5rem;
+    margin: 2.5rem auto;
+}
+.content h1 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+.content h1, .content ol, .content p, .content ul {
+    margin: 1rem auto;
+}
+.content ol {
+    padding: 1rem auto auto auto;
+}
+.content ul {
+    padding: 0;
+    list-style: none;
+}
+
+@media screen and (min-width: 481px) {
+    .content h1 {
+        font-size: 1.5rem;
+    }
+    .content li, .content p, .data {
+        font-size: 1.25rem;
+    }
+    #detail {
+        width: 75%;
+    }
+    .main svg {
+        width: 50%;
+    }
+}
+
+.box span{
+    font-size: 10px;
+}

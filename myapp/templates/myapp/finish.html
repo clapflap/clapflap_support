@@ -1,0 +1,89 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset = "utf-8">
+        <!-- Common -->
+        <link rel = "canonical" href = "http://clpaflap.jp">
+        <link rel = "stylesheet" href = "https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,500|Roboto:500&display=swap">
+        <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+        <meta name = "format-detection" content = "email=no, telephone=no, address=no">
+        <meta name = "google" content = "nositelinkssearchbox">
+        <meta name = "robots" content = "noindex,nofollow">
+        <meta name = "viewport" content = "width=device-width,initial-scale=1">
+        <title> CLAP FLAP - Support </title>
+        <!-- CSS -->
+        <link rel = "stylesheet" type="text/css" href="{% static 'myapp/other.css' %}"> <!-- Custom -->
+        <link rel = "stylesheet" type="text/css" href="{% static 'myapp/common.css' %}">
+        <link rel = "stylesheet" type="text/css" href="{% static 'myapp/finish.css' %}">
+        <!-- Icon -->
+        <link rel = "apple-touch-icon-precomposed" href = "image/favicon.png" type = "image/png"> <!-- 152 -->
+        <link rel = "icon" href = "image/favicon.svg" sizes = "any" type = "image/svg+xml"> <!-- SVG -->
+        <link rel = "shortcut icon" href = "image/favicon.ico" type = "image/x-icon"> <!-- 32 -->
+        <!-- Social Media -->
+        <meta property = "og:description" content = "アーティストが自由に活動出来る場を提供! アート好きな方も必見! 新サービス情報公開! 会社概要、サポート情報をご覧いただけます。">
+        <meta property = "og:image" content = "image/ogp.png"> <!-- 1200 * 630 -->
+        <meta property = "og:locale" content = "ja_JP">
+        <meta property = "og:site_name" content = "CLAP FLAP">
+        <meta property = "og:title" content = "CLAP FLAP - Home">
+        <meta property = "og:type" content = "website">
+        <meta property = "og:url" content = "http://clpaflap.jp">
+        <meta property = "twitter:card" content = "summary_large_image">
+        <meta property = "twitter:site" content = "@clapflap_o">
+        <!-- Windows -->
+        <meta name = "msappkication-TileColor" content = "#888">
+        <meta name = "msappkication-TileImage" content = "tile.png"> <!-- 144 -->
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <div class = "logo">
+                <svg version = "1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink = "http://www.w3.org/1999/xlink" x = "0px" y = "0px" viewBox = "0 0 310 94.2" style = "enable-background:new 0 0 310 94.2;" xml:space = "preserve">
+                    <a xlink:href = "index.html">
+                        <path d = "M37,57.3c-4.5-4.1-8.7-4.5-11-4.5c-8.8,0-14.8,6.5-14.8,15.4c0,8.6,6.2,15.2,14.8,15.2c4.9,0,8.6-2.5,10.9-4.7v7.4c-4.1,2.4-8.3,3-11.1,3c-7.4,0-12-3.3-14.4-5.6C6.8,79.1,5,74,5,68.3c0-7.5,3.1-12.7,6.5-15.9c4.2-4,9.1-5.3,14.7-5.3c3.7,0,7.3,0.7,10.8,2.9V57.3z
+                        M46.5,47.1v36h12.4v6.1H40.1V47.1H46.5z
+                        M89,79.6H72l-4.4,9.6h-6.6l19.8-42.1l18.8,42.1h-6.6L89,79.6z
+                        M86.6,73.9l-5.9-13.5l-6.1,13.5H86.6z
+                        M112.5,47.1c2.6,0,6.2,0.3,9.2,2.3c3.5,2.3,5.2,6.4,5.2,10.2c0,2.5-0.6,6.2-4.1,9.2c-3.3,2.8-7.2,3.3-10.3,3.3h-2.9v17.1h-6.4V47.1H112.5z
+                        M109.6,66.1h2.9c5.6,0,8.2-2.7,8.2-6.6c0-2.3-0.9-6.5-8.3-6.5h-2.8V66.1z
+                        M162,53.1h-14.6v10.7h14.1v6.1h-14.1v19.3H141V47.1H162V53.1z
+                        M172,47.1v36h12.4v6.1h-18.8V47.1H172z
+                        M214.5,79.6h-17l-4.4,9.6h-6.6l19.8-42.1l18.8,42.1h-6.6L214.5,79.6z
+                        M212,73.9l-5.9-13.5L200,73.9H212z
+                        M237.9,47.1c2.6,0,6.2,0.3,9.2,2.3c3.5,2.3,5.2,6.4,5.2,10.2c0,2.5-0.6,6.2-4.1,9.2c-3.3,2.8-7.2,3.3-10.3,3.3h-2.9v17.1h-6.4V47.1H237.9z
+                        M235.1,66.1h2.9c5.6,0,8.2-2.7,8.2-6.6c0-2.3-0.9-6.5-8.3-6.5h-2.8V66.1z
+                        M294.5,45c-9.3,0-16.8-7.5-16.8-16.8s7.5-16.8,16.8-16.8c4,0,7.6,1.4,10.5,3.7V5h-52.6v40h29.5v11h-18.4v11h11v11h-11v11H305V41.3C302.1,43.6,298.5,45,294.5,45z
+                        M294.5,17.6c-5.8,0-10.5,4.7-10.5,10.5s4.7,10.5,10.5,10.5S305,34,305,28.2S300.3,17.6,294.5,17.6z"/>
+                    </a>
+                </svg>
+            </div>
+        </header>
+        <div class="main">
+            <h1>お問い合わせ完了</h1>
+            <div class="content">
+                <div class="item">
+                    <p>お問い合わせ頂きありがとうございました。<br>
+                    お送り頂いた内容を確認の上、担当者より折り返しご連絡させて頂きます。<br>
+                    尚、入力頂いたメールアドレスがご本人様のものでない場合はご連絡することができません。あらかじめご了承ください。<br>
+                    お急ぎの場合は下記のメールアドレスより直接お問い合わせください。</p>
+                </div>
+                <div class="email">
+                    <a href="mailto:support@clapflap.jp">support@clapflap.jp</a>
+                </div>
+                    <p class="button-top">
+                        <a href="https://clapflap.jp">TOP</a>
+                    </p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <ul>
+                <li> <a href = "companyProfile.html"> 会社概要 </a> </li>
+                <li> <a href = "privacyPolicy.html"> プライバシーポリシー </a> </li>
+                <li> <a href = "#"> お問い合わせ </a> </li>
+            </ul>
+            <small> &copy; CLAP FLAP </small>
+        </footer>
+    </body>
+</html>
